@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>BAAP ER BANK</title>
+</head>
+<body >
+    <header>
+        <h1 class="text-black text-5xl font-semibold text-center mt-6">Lets to your Some<span class="text-orange-500 font-bold">Moneeeey!!</span></h1>
+    </header>
+
+    <main>
+        <section class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-12">
+            <div class="bg-green-700 p-10 rounded-2xl shadow-2xl">
+                <h3 class="font-semibold text-3xl text-white">Deposite</h3>
+                <h1 class="font-bold text-5xl text-white">&<span id="deposite-pre-amount">00</span></h1>
+            </div>
+            <div class="bg-yellow-600 p-10 rounded-2xl shadow-2xl">
+                <h3 class="font-semibold text-3xl text-white">Withdraw</h3>
+                <h1 class="font-bold text-5xl text-white">&<span id="withdrawElement">00</span></h1>
+            </div>
+            <div class="bg-violet-700 p-10 rounded-2xl shadow-2xl">
+                <h3 class="font-semibold text-3xl text-white">Balance</h3>
+                <h1 class="font-bold text-5xl text-white">&<span id="balanced-deposite">1000</span></h1>
+            </div>
+        </section>
+
+         <section class="grid grid-cols-2 gap-4  py-8 w-3/4 mx-auto mt-6 pl-6 shadow-2xl rounded-2xl">
+            <div class="bg-green-500 p-6 rounded-2xl">
+                <h1 class="text-3xl font-bold  mt-6">Please Deposite</h1>
+                <input class="block mb-4 w-3/4 py-2 mt-4 border rounded-xl pl-2" placeholder="& Amount you want to deposite" type="text" name="" id="user-deposite">
+                <button class="bg-blue-600 px-8 py-2 text-white rounded-2xl hover:bg-sky-600" id="deposite-btn">Deposite</button>
+            </div>
+            <div class="bg-yellow-500 p-6 mr-6 rounded-2xl">
+                <h1 class="text-3xl font-bold  mt-6">Please Withdraw</h1>
+                <input class="block mb-4 w-3/4 py-2 mt-4 border rounded-xl pl-2" placeholder="& Amount you want to Witdraw" type="email" name="" id="user-withdraw">
+                <!-- <input class="block mb-4 w-3/4 py-2 mt-4 border rounded-xl pl-2" placeholder="Enter password" type="password" name="" id="user-password"> -->
+                <button class="bg-blue-600 px-8 py-2 text-white rounded-2xl hover:bg-sky-600" id="withdraw-btn">Withdraw</button>
+            </div>
+        </section>
+    </main>
+
+    
+
+
+    <script src="js/utilities.js"></script>
+    <script src="js/deposite.js"></script>
+    <script src="js/withdraw.js"></script>
+    <script src="js/bank.js"></script>
+</body>
+</html>
